@@ -4,14 +4,6 @@ Created on Thu Nov 09 12:15:57 2017
 
 @author: Sonal
 """
-
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Sep 27 14:29:27 2017
-
-@author: Sonal
-"""
-
 from sklearn.decomposition import PCA
 from sklearn.ensemble import RandomForestRegressor
 from sklearn import linear_model
@@ -28,9 +20,6 @@ import xgboost as xgb
 
 import os
 import math
-
-
-path = 'C:\Users\Sonal\Documents\Third Sem\AGGM\Proj 1\Proj1 - Training Data\Trainning Data'
 
 def read_file(path):
 	columns = ['Body_temp', 'Heart_rate', 'Env_temp', 'Humidity', 'X_Mean', 'Y_Mean', 'Z_Mean', 'VarX', 'VarY', 'VarZ', 'CoVarX', 'CoVarY', 'CoVarZ', 'Skew_X', 'Skew_Y', 'Skew_Z', 'Kurt_X', 'Kurt_Y', 'Kurt_Z', 'PSM_X', 'PSM_Y', 'PSM_Z', 'Freq_X', 'Freq_Y', 'Freq_Z', 'A_X_Mean', 'A_Y_Mean', 'A_Z_Mean', 'A_VarX', 'A_VarY', 'A_VarZ', 'A_CoVarX', 'A_CoVarY', 'A_CoVarZ', 'A_Skew_X', 'A_Skew_Y', 'A_Skew_Z', 'A_Kurt_X', 'A_Kurt_Y', 'A_Kurt_Z', 'A_PSM_X', 'A_PSM_Y', 'A_PSM_Z', 'A_Freq_X', 'A_Freq_Y', 'A_Freq_Z', 'Mean_val', 'LinearTrend', 'Variance', 'Skewness', 'Kurtosis', 'Ran_min_max']
